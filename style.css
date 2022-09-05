@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Estilização para toda a página */
+*{
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+body{
+  background: #F3F5FC;
+  width: 100%;
+  height: 100%;
+}
+
+header img{
+  margin: 50px;
+}
+
+main{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+section.principal{
+  display: flex;
+  margin: 20px 0px 0px 50px;
+}
+
+textarea{
+  outline: none;
+  resize: none;
+}
+
+textarea.area-texto{
+  background: inherit;
+  color: #0A3871;
+  border: 1px solid #F3F5FC;
+  padding: 15px;
+  width: 680px;
+}
+
+div.mensagem{
+  background: #FFFFFF;
+  color: #495057;
+  border: 1px solid #FFFFFF;
+  padding: 20px;
+  border-radius: 32px;
+  margin-left: 20px;
+  width: 400px;
+  /* height: auto; */
+  text-align: center;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+div.nenhuma-mensagem{
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+div.nenhuma-mensagem img{
+  margin: 0 auto;
+}
+
+p.aviso-nenhuma-mensagem{
+  color: #343A40;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 20px;
+}
+
+p.descricao-nenhuma-mensagem{
+  color: #495057;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 16px;
+}
+
+div.nenhuma-mensagem img{
+  display: block;
+}
+
+textarea.area-mensagem{
+  background-color: inherit;
+  border: none;
+  display: none;
+  margin: 20px;
+  width: 340px;
+}
+
+div.informacao{
+  color: #343A40;
+  margin: 20px 0;
+}
+
+div.informacao i{
+  font-size: 15px;
+}
+
+div.informacao span{
+  font-size: 16px;
+}
+
+.button{
+  cursor: pointer;
+  border-radius: 35px;
+  font-size: 16px;
+  width: 325px;
+  height: 65px;
+  margin: 5px;
+}
+
+button.btn-encriptar{
+  background: #0A3871;
+  color: #F3F5FC;
+  border: 1px solid #0A3871;
+}
+
+button.btn-descriptografar{
+  background: #D8DFE8;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+}
+
+button.btn-copiar{
+  background: #FFFFFF;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+  display: none;
+  margin: 0 auto;
+}
+
+footer{
+  background: #0A3871;
+  opacity: 1;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer p{
+  background: transparent;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+footer p span{
+  color: #6d8fbb;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+footer p span:hover{
+  color: #F3F5FC;
+  cursor: wait;
+}
+
+
+/* Estilização para telas com no máximo 480px */
+@media screen and (max-width: 480px){
+  
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  header img{
+    margin: 10px;
+  }
+  
+  main{
+    height: 100%;
+    width: 80%;
+    margin: auto 0;
+  }
+  
+  section.principal{
+    display: block;
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  section.acoes-principais{
+    width: 100%;
+  }
+  
+  textarea.area-texto{
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  div.mensagem{
+    width: 100%;
+    margin: 100px 10px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  div.nenhuma-mensagem{
+    width: 0 auto;
+  }
+  
+  div.nenhuma-mensagem img{
+    display: none;
+  }
+  
+  p.aviso-nenhuma-mensagem{
+    font-size: 20px;
+  }
+  
+  textarea.area-mensagem{
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  div.informacao{
+    margin: 15px;
+    width: 100%;
+  }
+  
+  div.informacao span{
+    font-size: 16px;
+  }
+  
+  .button{
+    display: block;
+    width: 100%;
+    border: 5px 0
+  }
+
+}
+
+
+/* Estilização para telas entre 481px e 960px */
+@media screen and (min-width: 481px) and (max-width: 960px){
+
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  main{
+    height: 100%;
+    width: 80%;
+    margin: auto 0;
+  }
+  
+  section.principal{
+    display: block;
+    width: 100%;
+  }
+
+  section.acoes-principais{
+    width: 100%;
+  }
+
+  textarea{
+    width: 90%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  div.mensagem{
+    width: 100%;
+    margin: 100px 10px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  div.nenhuma-mensagem{
+    width: 100%;
+  }
+  
+  div.nenhuma-mensagem img{
+    display: none;
+  }
+  
+  p.aviso-nenhuma-mensagem{
+    font-size: 20px;
+  }
+  
+  div.informacao{
+    margin: 15px;
+    width: 100%;
+  }
+  
+  div.informacao span{
+    font-size: 16px;
+  }
+  
+  .button{
+    display: block;
+    width: 100%;
+    border: 5px 0
+  }
+
+}
+
+/* Estilização para telas entre 961px e 1200px */
+@media screen and (min-width: 961px) and (max-width: 1200px){
+  
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  main{
+    height: 100%;
+    width: 80%;
+    margin: auto 0;
+  }
+  
+  section.principal{
+    display: block;
+    width: 100%;
+  }
+
+  section.acoes-principais{
+    width: 100%;
+  }
+
+  textarea{
+    width: 90%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  div.mensagem{
+    width: 100%;
+    margin: 100px 10px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  div.nenhuma-mensagem{
+    width: 100%;
+  }
+  
+  div.nenhuma-mensagem img{
+    display: none;
+  }
+  
+  p.aviso-nenhuma-mensagem{
+    font-size: 20px;
+  }
+  
+  div.informacao{
+    margin: 15px;
+    width: 100%;
+  }
+
+  div.informacao span{
+    font-size: 16px;
+  }
+  
+  .button{
+    display: block;
+    width: 100%;
+    border: 5px 0
+  }
+ 
+  footer{
+    display: none;
+  }
+
+}

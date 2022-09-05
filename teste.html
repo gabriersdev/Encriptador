@@ -1,0 +1,24 @@
+<html>
+
+<!-- Input texto -->
+<input type="text" value="Texto a ser copiado" id="texto-usuario" />
+
+<!-- Botão que usaremos para copiar -->
+<button onclick="copiarTexto()">Copiar texto</button>
+
+<script>
+  function copiarTexto() {
+  /* Selecionamos por ID o nosso input */
+  var textoCopiado = document.querySelector("#texto-usuario");
+  /* Deixamos o texto selecionado (em azul) */
+  textoCopiado.select();
+  textoCopiado.setSelectionRange(0, 99999); /* Para mobile */
+
+  /* Copia o texto que está selecionado */
+  document.execCommand("copy");
+
+  alert("Texto copiado: " + textoCopiado.value);
+}
+</script>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="shortcut icon" href="./imagens/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabeçalho da página -->
+  <header>
+    <img src="./imagens/logo.svg" alt="Ícone de uma cadeado">
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main>
+    <!-- Seção com as principais informações e ações -->
+    <section class="principal">
+      <section class="acoes-principais">
+        <textarea name="" id="input-texto" class="area-texto" cols="30" rows="10" placeholder="Digite seu texto_" autofocus></textarea>
+        <div class="informacao">
+          <span title="No processo de criptografia, as letras maiúsculas são ignoradas."><i class="bi smaller bi-exclamation-circle-fill"></i> Apenas letras minúsculas e sem acento.</span>
+        </div>
+        <div class="botoes">
+          <button class="button btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+          <button class="button btn-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+        </div>
+      </section>
+      
+      <!-- Onde aparece a mensagem criptografada/descriptografada e o botão de copiar -->
+      <div class="mensagem">
+        <div class="nenhuma-mensagem" id="nenhuma-mensagem">
+          <img src="./imagens/image-boy.svg" alt="Figura de um menino com uma lupa próximo ao olho" title="Figura de um menino com uma lupa próximo ao olho">
+          <p class="aviso-nenhuma-mensagem">Nenhuma mensagem encontrada</p>
+          <p class="descricao-nenhuma-mensagem">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+        <textarea name="" id="mensagem" class="area-mensagem" cols="30" rows="10" readonly></textarea>
+        <button class="button btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p><span>GABRIEL RIBEIRO</span></p>
+  </footer>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+</html>
