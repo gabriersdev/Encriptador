@@ -1,6 +1,6 @@
 # Encriptador
 
-Veja o projeto publicado no [GitHub Pages](https://gabrieszin.github.io/Encriptador/)
+Veja o projeto publicado no [GitHub Pages](https://gabriersdev.github.io/Encriptador/)
 
 ## Descrição:
   
